@@ -1,0 +1,53 @@
+<html>
+<head><title></title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Poppins:wght@500&family=Tangerine&display=swap" rel="stylesheet">  
+
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <script src="main.js"></script>
+
+</head>
+
+<body style="text-align: center;">
+    <h1 style="font-family: 'Tangerine', cursive;">Guest list</h1>
+    <input style="font-family: 'Poppins', sans-serif; " type="text" placeholder="Enter Name" id="input_box1">
+    <button id="submit_button" onclick="submit()" style= "font-family: 'Poppins', sans-serif;">Submit </button>
+<hr>
+<script>
+    function submit()
+	{
+		var inputs = [];
+		for(var i = 1 ; i <=6 ; i++)
+		{
+            inputs.push(document.getElementById("input_box1" + i).value);
+    
+		}
+	document.getElementById("commaz_submit\show").innerHTML = inputs.join(", ");
+	}
+
+	function show()
+	{
+		var inputs = [];
+		for(var i = 1 ; i <=6 ; i++)
+		{
+			inputs.push(document.getElementById("input_box" + i).value);
+		}
+	document.getElementById("").innerHTML = inputs.join("");
+	}
+
+</script>
+<div>
+    <h1 id="commaz_submit\show"></h1>
+</div>
+<hr>
+<h1 style="font-family: 'Tangerine', cursive;">Guest list</h1>
+<button id="show_button" onclick="show()" style="font-family: 'Poppins', sans-serif;">Show</button>
+
+<hr> 
+<hr>
+<h1 style="font-family: 'Tangerine', cursive;">Guest list</h1>
+<input style="font-family: 'Poppins', sans-serif; " type="text" placeholder="Search Name">
+<button id="search_button" onclick="search()" style="font-family: 'Poppins', sans-serif;">Search</button>
+</body>
+</html>
